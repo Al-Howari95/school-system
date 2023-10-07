@@ -105,7 +105,7 @@
 
 // constructor
 
-class Student {
+class School {
 
     constructor (name,date,Phone,grade) {     
         this.name = name;
@@ -114,7 +114,7 @@ class Student {
         this.Phone = Phone;
         this.grade = grade;
     }
-      myfunction(...a){
+    functionSchool(...a){
         let arr=[];
 
         arr.push(a);
@@ -135,8 +135,8 @@ let submit= document.getElementById("S")
     card.style.width="120px"
 
 
-    let imgg = document.createElement("img");
-    imgg.src="img/profile.jpg"
+    let image = document.createElement("img");
+    image.src="img/profile.jpg"
    
 
     let name= document.createElement("div")
@@ -156,20 +156,20 @@ let submit= document.getElementById("S")
 
 
 
-   let nName = document.getElementById("username").value;
-   let nDate = document.getElementById("birthday").value;
+   let sName = document.getElementById("username").value;
+   let aDate = document.getElementById("birthday").value;
 //    let nGender = document.getElementById("gender").value;
-   let nPhone = document.getElementById("phonenumber").value;
-   let nGrade = document.getElementById("grade").value;
+   let gPhone = document.getElementById("phonenumber").value;
+   let lGrade = document.getElementById("grade").value;
 
 
 
    
 
-   let hh = new Student(name,date,Phone,grade);   
-   hh.myfunction([nName,nDate,nPhone,nGrade]);
+   let ca = new School(name,date,Phone,grade);   
+   ca.functionSchool([sName,aDate,gPhone,lGrade]);
 
-    card.appendChild(imgg);
+    card.appendChild(image);
     card.appendChild(name);
     card.appendChild(date);
     // card.appendChild(gender);
